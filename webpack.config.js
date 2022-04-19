@@ -1,28 +1,36 @@
 const path = require("path");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development", 
     entry: "./src/index.js", 
     output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "main.bundle")
+        filename: "main.bundle.js", 
+        path: path.resolve(__dirname, "bundle")
     }, 
 
-    plugins: [
+    plugins:[
         new CleanWebpackPlugin(), 
         new MiniCssExtractPlugin({filename: "main.bundle.css"}), 
         new HtmlWebpackPlugin({
-            templates: "./src/index.html", 
+            template: "./src/index.html", 
         }), 
     ], 
 
-    module:
-    {
-        rules:
+    module: {
+        rules: 
         [
+            {
+                test: /\.css$/i, 
+                use: 
+                [
+                    MiniCssExtractPlugin.loader, 
+                    "css-loader", 
+                ], 
+            },
+
             {
                 test: /\.m?js$/, 
                 exclude: /(node_modules)/, 
@@ -40,45 +48,22 @@ module.exports = {
                 },
             },
 
-            {
-                test: /\.css$/, 
-                use:
-                [
-                    MiniCssExtractPlugin.loader, 
-                    "css-loader", 
-                ],
-            },
 
             {
-                test: /\.html$/, 
+                test:/\.html$/, 
                 use:
                 [
-                    "html-loader", 
+                    "html-loader"
                 ], 
             }, 
 
             {
-                test: /\.(svg|png|jpe?g|gif)$/, 
-                use:
-                {
-                    loader: "file-loader", 
-                    options: 
-                    {
-                        name: "[name].[ext]"
-                    }, 
-                }, 
-            }, 
-
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                use:{
-                    loader: "file-loader", 
-                    options: {
-                        name:"[name].[ext]"
-                    },
+                test: /\.(png|jpe?g|gif|mp4)$/i,
+                loader: 'file-loader',
+                options: {
+                  outputPath: 'images',
                 },
-            },
-
-        ],
+              }, 
+        ], 
     }, 
-};
+}; 
