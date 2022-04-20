@@ -1,0 +1,19 @@
+@font-face{
+    font-family: titleFont;
+    src: url("../fonts/titleFont.ttf");
+}
+
+
+nav ul li{
+    display: inline-block;
+	color: white;
+	list-style-type: none;
+	padding: 0px 5px 10px 0px;
+	letter-spacing: 1px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+    color: #cfb53b;
+}

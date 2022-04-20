@@ -1,0 +1,29 @@
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/background.css ***!
+  \*********************************************************************************/
+body{
+    background: #21242c;
+}
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/texts.css ***!
+  \****************************************************************************/
+@font-face{
+    font-family: titleFont;
+    src: url(5bdeaa7b5cbf0cbb4231.ttf);
+}
+
+
+nav ul li{
+    display: inline-block;
+	color: white;
+	list-style-type: none;
+	padding: 0px 5px 10px 0px;
+	letter-spacing: 1px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+    color: #cfb53b;
+}
+
