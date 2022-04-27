@@ -1,29 +1,370 @@
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/background.css ***!
-  \*********************************************************************************/
-body{
-    background: #21242c;
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/background.scss ***!
+  \*************************************************************************************************************************/
+.root {
+  background: #21242c;
 }
-/*!****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/texts.css ***!
-  \****************************************************************************/
-@font-face{
-    font-family: titleFont;
-    src: url(5bdeaa7b5cbf0cbb4231.ttf);
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/menu/menus.scss ***!
+  \*************************************************************************************************************************/
+@font-face {
+  font-family: titleFont;
+  src: url(5bdeaa7b5cbf0cbb4231.ttf);
+}
+@font-face {
+  font-family: menuFont;
+  src: url(3843f456cf56d275baf6.ttf);
+}
+.header {
+  background: #21242c;
+  height: 20%;
 }
 
-
-nav ul li{
+@media screen and (min-width: 1120px) {
+  .header ul li {
+    font-family: menuFont;
     display: inline-block;
-	color: white;
-	list-style-type: none;
-	padding: 0px 5px 10px 0px;
-	letter-spacing: 1px;
-	font-size: 25px;
-	text-decoration: none;
-}
+    color: white;
+    list-style-type: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0px 0px 20px 30px;
+  }
 
-nav ul li:hover{
+  .header ul li a {
+    transition: color 0.5s ease-out;
+  }
+
+  .header ul li a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header ul li a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .header ul li a:hover {
     color: #cfb53b;
+  }
+
+  .header #explore, #news, #dashboard, #help {
+    letter-spacing: 1px;
+  }
+
+  .header #input {
+    width: 140px;
+    padding: 20px 0px 20px 20px;
+  }
+
+  .header ul li:hover {
+    color: #cfb53b;
+  }
+
+  .header #proton {
+    font-family: titleFont;
+    font-size: 2.5rem;
+  }
+
+  .header #proton, #db {
+    padding: 0px;
+  }
+
+  .header li input {
+    font-size: 1rem;
+    appearance: none;
+    padding-bottom: 5px;
+    width: 100%;
+    color: white;
+    border: #21242c;
+    background-color: #21242c;
+    border-bottom: 1px solid white;
+  }
+
+  .header li input:hover {
+    border-bottom: 2px solid white;
+  }
+
+  .header #language, #account {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+  }
+
+  .header #db {
+    color: #cfb53b;
+    font-family: titleFont;
+    font-size: 2.5rem;
+  }
+
+  .header #db a {
+    color: #cfb53b;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .header #menu span img:empty {
+    width: 0%;
+  }
+
+  .header ul li {
+    font-family: menuFont;
+    color: white;
+    list-style-type: none;
+    padding: 0px 5px 10px 0px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-decoration: none;
+    height: fit-content;
+  }
+
+  .header ul li:hover {
+    color: #cfb53b;
+  }
+
+  .header #proton {
+    font-family: titleFont;
+    font-size: 4rem;
+  }
+
+  .header #db {
+    font-family: titleFont;
+    color: #cfb53b;
+    font-size: 4rem;
+  }
+
+  .header li input {
+    color: white;
+    border: #21242c;
+    background-color: #21242c;
+    border-bottom: 1px solid white;
+    transition: opacity 1s ease-in;
+  }
+
+  .header #language {
+    float: right;
+  }
+
+  .header #account {
+    float: right;
+  }
+}
+/*!************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/body/body.scss ***!
+  \************************************************************************************************************************/
+html {
+  background-color: #21242c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+@font-face {
+  font-family: menuFont;
+  src: url(3843f456cf56d275baf6.ttf);
+}
+.pageBody {
+  background: #21242c;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageBody #messages {
+  display: flex;
+  height: 60%;
+  flex-wrap: wrap;
+}
+
+.pageBody #messages #message1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pageBody #messages #message1 p {
+  font-size: 38px;
+  color: white;
+  font-family: menuFont;
+  width: 50%;
+}
+
+.pageBody #messages #message2 {
+  width: 50%;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.pageBody #messages #message2 #deckVerified li, #deckPlayable li, #threeOrMore li, #twoOrMore li, #atLeastOne li {
+  display: inline-block;
+  color: #cfb53b;
+  font-family: menuFont;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pageBody #messages #message2 #test1 {
+  list-style-image: url(8ee223d1029fdfe00b38.png);
+}
+
+.pageBody #messages #message2 #deckVerified #firstLine, #deckPlayable #secondLine {
+  text-decoration: underline;
+  font-size: 28px;
+}
+
+.pageBody #messages #message2 #deckVerified #firstLine a:visited, #deckPlayable #secondLine a:visited {
+  color: #cfb53b;
+  font-size: 18px;
+}
+
+.pageBody #messages #message2 #threeOrMore #thirdLine, #twoOrMore #fourthLine, #atLeastOne #fifthLine {
+  font-size: 28px;
+}
+
+.pageBody #messages #message2 #gamesOnProtonDB, #verified {
+  color: white;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: menuFont;
+  font-size: 28px;
+}
+
+.pageBody #stats {
+  background-color: #21242c;
+}
+
+.pageBody #stats #steamDeckImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.pageBody #newPost {
+  background-color: #21242c;
+  font-size: 18px;
+  text-align: center;
+  font-family: menuFont;
+  color: #8f9195;
+}
+
+.pageBody #newPost a:visited {
+  color: #8f9195;
+}
+
+.pageBody #whatIsProton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  -moz-box-align: center;
+}
+
+.pageBody #whatIsProton {
+  color: white;
+  font-family: menuFont;
+  margin-bottom: 32px;
+}
+
+.pageBody #whatIsProton h2 {
+  font-size: 33px;
+}
+
+.pageBody #whatIsProton p {
+  font-weight: bold;
+  max-width: 800px;
+  font-size: 18px;
+}
+
+.pageBody #whatIsDB {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  -moz-box-align: center;
+}
+
+.pageBody #whatIsDB {
+  color: white;
+  font-family: menuFont;
+  margin-bottom: 32px;
+}
+
+.pageBody #whatIsDB p {
+  max-width: 800px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pageBody #whatIsDB h2 {
+  font-size: 33px;
+  text-align: center;
+}
+/*!****************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
+  \****************************************************************************************************************************/
+@font-face {
+  font-family: menuFont;
+  src: url(3843f456cf56d275baf6.ttf);
+}
+.footer #divider {
+  background-color: white;
+  background-blend-mode: luminosity;
+  background-image: linear-gradient(to right, rgb(88, 88, 88), rgb(151, 148, 148), rgb(193, 191, 191), white, rgb(193, 191, 191), rgb(151, 148, 148), rgb(88, 88, 88));
+  height: 3px;
+  width: 100%;
+  display: flex;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+}
+
+.footer #footerInfo {
+  flex-direction: row;
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  font-family: menuFont;
+}
+
+.footer #footerInfo p {
+  color: rgba(255, 255, 255, 0.615);
+}
+
+.footer #footerInfo #dbInfo {
+  width: 80%;
+}
+
+.footer #footerInfo #dbInfo #info1 {
+  padding: 16px 32px 20px;
+}
+
+.footer #footerInfo #dbInfo #info2, #info3 {
+  padding: 0 0 0 32px;
+}
+
+.footer #footerInfo #advices {
+  width: 30%;
+  align-items: flex-end;
+  padding-top: 30px;
+  display: flex;
+  text-align: right;
+  flex-wrap: wrap;
+  justify-content: right;
+}

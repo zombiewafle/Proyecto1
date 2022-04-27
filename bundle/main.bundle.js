@@ -10,43 +10,163 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/body/body.js":
+/*!*************************************!*\
+  !*** ./src/components/body/body.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"PageBody\": () => (/* binding */ PageBody)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _body_body_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../body/body.scss */ \"./src/components/body/body.scss\");\n/* harmony import */ var _images_steamDeck_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/steamDeck.png */ \"./src/images/steamDeck.png\");\n\n\n\nfunction PageBody() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"pageBody\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"messages\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"message1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"Con Proton y Steam Play, \\xA1ahora muchos juegos funcionan en Linux!\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"message2\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    id: \"verified\"\n  }, \"Deck Verified Games\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"deckVerified\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    id: \"test1\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"ver\"\n  }, \"verificado para deck\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"firstLine\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"https://www.protondb.com/explore?selectedFilters=whitelisted\"\n  }, \"1,182\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"deckPlayable\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"play\"\n  }, \"verificado para deck (jugable o verificado)\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"secondLine\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"https://www.protondb.com/explore?selectedFilters=whitelisted\"\n  }, \"2,276\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    id: \"gamesOnProtonDB\"\n  }, \"Games on ProtonDB\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"threeOrMore\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"three\"\n  }, \"recomendado por tres o m\\xE1s\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"thirdLine\"\n  }, \"4,974\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"twoOrMore\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"two\"\n  }, \"recomendado por dos o m\\xE1s\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"fourthLine\"\n  }, \"7,302\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"atLeastOne\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"one\"\n  }, \"recomendado por al menos uno\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    id: \"fifthLine\"\n  }, \"13,092\"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"stats\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"steamDeckImage\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    src: _images_steamDeck_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"newPost\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"How's this work? Read about it on the \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"https://www.protondb.com/news/how-many-games-work-on-linux-and-steam-deck-dashboard\"\n  }, \"news post\"), \". Also, you can use a bigger version on \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n    href: \"https://www.protondb.com/dashboard\"\n  }, \"the new Dashboard page\"), \".\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"whatIsProton\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, \"\\xBFQu\\xE9 es proton?\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"Proton es una nueva herramienta publicada por Valve Software que ha sido integrada con Steam Play para hacer que jugando juegos de Windows en Linux sea tan simple como pulsar el bot\\xF3n de Jugar dentro de Steam. Bajo el cap\\xF3, Proton abarca otras herramientas populares como Wine y DXVK, que un jugador tendr\\xEDa que instalar y mantener por el mismo. Esto alivia enormemente la carga para los usuarios que cambian a Linux, sin tener que aprender los sistemas subyacentes o tener que perder una gran parte de su librer\\xEDa de juegos. Proton todav\\xEDa est\\xE1 en su infancia, as\\xED que el soporte es poco consistente, pero mejora regularmente.\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"whatIsDB\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, \"\\xBFQu\\xE9 es ProtonDB?\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"El objetivo de ProtonDB es recopilar reportes de otros jugadores mientras prueban juegos con Proton en Linux y proporcionan puntuaciones sobre como de bien van los juegos. Un conjunto de sugerencias cada vez mayor proporcionan ajustes que puedes probar para intentar conseguir que los juegos funcionen mientras Proton sigue desarroll\\xE1ndose. Adem\\xE1s de esto, tambi\\xE9n puedes explorar el cat\\xE1logo de juegos de Steam en este sitio para buscar y descubrir una amplio rango de t\\xEDtulos que estaban previamente no disponibles para utilizar en Linux.\")));\n}\n\n//# sourceURL=webpack://proyecto1/./src/components/body/body.js?");
+
+/***/ }),
+
+/***/ "./src/components/footer/footer.js":
+/*!*****************************************!*\
+  !*** ./src/components/footer/footer.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Footer\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _footer_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../footer/footer.scss */ \"./src/components/footer/footer.scss\");\n/* harmony import */ var _images_discord_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/discord.svg */ \"./src/images/discord.svg\");\n/* harmony import */ var _images_chat_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/chat.svg */ \"./src/images/chat.svg\");\n/* harmony import */ var _images_patron_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/patron.png */ \"./src/images/patron.png\");\n\n\n\n\n\nfunction Footer() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"footer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"divider\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    id: \"footerInfo\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"dbInfo\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    id: \"info1\"\n  }, \"ProtonDB es un proyecto pasional de @bdefore y una dedicada comunidad de contribuidores.\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    id: \"info2\"\n  }, \"Este sitio utiliza datos de Steam as\\xED como tambi\\xE9n datos proporcionados por SteamDB v\\xEDa Algolia.\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", {\n    id: \"info3\"\n  }, \"Este sitio no est\\xE1 afiliado con Valve Software. Todas las im\\xE1genes y logos de los juegos son propiedad de sus respectivos due\\xF1os.\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", {\n    id: \"advices\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, \"\\xBFTienes sugerencias? \\xA1Ven y \\xFAnete en Discord!\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    id: \"discord\",\n    width: \"10%\",\n    src: _images_discord_svg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    id: \"chat\",\n    width: \"10%\",\n    src: _images_chat_svg__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    id: \"patron\",\n    width: \"30%\",\n    src: _images_patron_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\n  }))));\n}\n\n//# sourceURL=webpack://proyecto1/./src/components/footer/footer.js?");
+
+/***/ }),
+
+/***/ "./src/components/menu/menu.js":
+/*!*************************************!*\
+  !*** ./src/components/menu/menu.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Menus\": () => (/* binding */ Menus)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _menus_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menus.scss */ \"./src/components/menu/menus.scss\");\n/* harmony import */ var _images_site_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/site-logo.png */ \"./src/images/site-logo.png\");\n/* harmony import */ var _images_accountIcon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/accountIcon.png */ \"./src/images/accountIcon.png\");\n/* harmony import */ var _images_worldIcon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/worldIcon.png */ \"./src/images/worldIcon.png\");\n\n\n\n\n\nfunction Menus() {\n  //The functionality of the menu is here\n  return (\n    /*#__PURE__*/\n    //The menu in html is here\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      className: \"header\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n      id: \"menu\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      src: _images_site_logo_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n      width: \"3%\"\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"proton\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"../../../bundle/index.html\"\n    }, \"proton\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"db\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"../../../bundle/index.html\"\n    }, \"db\")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"input\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"input\", {\n      type: \"text\",\n      placeholder: \"Search games...\",\n      name: \"searchBar\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"explore\"\n    }, \" \", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/explore\"\n    }, \"EXPLORAR\"), \" \"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"contribuite\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/explore\"\n    }, \"CONTRIBUIR\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"news\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/explore\"\n    }, \"NOTICIAS\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"dashboard\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/explore\"\n    }, \"DASHBOARD\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"help\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/explore\"\n    }, \"AYUDA\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"language\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      src: _images_worldIcon_png__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n      width: \"40%\"\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n      id: \"account\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"a\", {\n      href: \"https://www.protondb.com/\"\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      src: _images_accountIcon_png__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n      width: \"40%\"\n    })))))\n  );\n}\n\n//# sourceURL=webpack://proyecto1/./src/components/menu/menu.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _components_background_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/background.css */ \"./src/components/background.css\");\n/* harmony import */ var _images_worldicon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/worldicon.png */ \"./src/images/worldicon.png\");\n/* harmony import */ var _components_texts_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/texts.css */ \"./src/components/texts.css\");\n\n //import App from \"./App.js\";\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n  id: \"title\"\n}, \"proton\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, \"Explorar\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, \"Contribuir\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, \"Noticias\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, \"Dashboard\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, \"Ayuda\")), document.getElementById(\"root\"));\n\n//# sourceURL=webpack://proyecto1/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _images_up_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/up.png */ \"./src/images/up.png\");\n/* harmony import */ var _components_background_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/background.scss */ \"./src/components/background.scss\");\n/* harmony import */ var _components_menu_menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/menu/menu.js */ \"./src/components/menu/menu.js\");\n/* harmony import */ var _components_body_body_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/body/body.js */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_footer_footer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/footer/footer.js */ \"./src/components/footer/footer.js\");\n\n\n //import App from \"./App.js\";\n\n //import world from \"./images/worldicon.png\"\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_menu_menu_js__WEBPACK_IMPORTED_MODULE_4__.Menus, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_body_body_js__WEBPACK_IMPORTED_MODULE_5__.PageBody, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_footer_footer_js__WEBPACK_IMPORTED_MODULE_6__.Footer, null)), document.getElementById(\"root\"));\n\n//# sourceURL=webpack://proyecto1/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/images/worldicon.png":
+/***/ "./src/images/accountIcon.png":
+/*!************************************!*\
+  !*** ./src/images/accountIcon.png ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/bf90fdf81dbb6893542341cb00f31981.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/accountIcon.png?");
+
+/***/ }),
+
+/***/ "./src/images/chat.svg":
+/*!*****************************!*\
+  !*** ./src/images/chat.svg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/d75afd48a38f72fc29775fbfdba2855b.svg\");\n\n//# sourceURL=webpack://proyecto1/./src/images/chat.svg?");
+
+/***/ }),
+
+/***/ "./src/images/discord.svg":
+/*!********************************!*\
+  !*** ./src/images/discord.svg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/f09ba73b3cf0cd88398d2e1076edd42d.svg\");\n\n//# sourceURL=webpack://proyecto1/./src/images/discord.svg?");
+
+/***/ }),
+
+/***/ "./src/images/patron.png":
+/*!*******************************!*\
+  !*** ./src/images/patron.png ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/119a00efb8f491ad559189057396091c.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/patron.png?");
+
+/***/ }),
+
+/***/ "./src/images/site-logo.png":
 /*!**********************************!*\
-  !*** ./src/images/worldicon.png ***!
+  !*** ./src/images/site-logo.png ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/16162022a5dadcd60c4f4bd2363b0cd6.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/worldicon.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/547a9d4067252dc28435c465e35a7f3c.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/site-logo.png?");
 
 /***/ }),
 
-/***/ "./src/components/background.css":
+/***/ "./src/images/steamDeck.png":
+/*!**********************************!*\
+  !*** ./src/images/steamDeck.png ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/77c13a02d9780eb6dcfc9f973b921bd0.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/steamDeck.png?");
+
+/***/ }),
+
+/***/ "./src/images/up.png":
+/*!***************************!*\
+  !*** ./src/images/up.png ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/48ab9442b18bd38743e3121564636aae.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/up.png?");
+
+/***/ }),
+
+/***/ "./src/images/worldIcon.png":
+/*!**********************************!*\
+  !*** ./src/images/worldIcon.png ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"images/16162022a5dadcd60c4f4bd2363b0cd6.png\");\n\n//# sourceURL=webpack://proyecto1/./src/images/worldIcon.png?");
+
+/***/ }),
+
+/***/ "./src/components/background.scss":
+/*!****************************************!*\
+  !*** ./src/components/background.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/background.scss?");
+
+/***/ }),
+
+/***/ "./src/components/body/body.scss":
 /*!***************************************!*\
-  !*** ./src/components/background.css ***!
+  !*** ./src/components/body/body.scss ***!
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/background.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/body/body.scss?");
 
 /***/ }),
 
-/***/ "./src/components/texts.css":
-/*!**********************************!*\
-  !*** ./src/components/texts.css ***!
-  \**********************************/
+/***/ "./src/components/footer/footer.scss":
+/*!*******************************************!*\
+  !*** ./src/components/footer/footer.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/texts.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/footer/footer.scss?");
+
+/***/ }),
+
+/***/ "./src/components/menu/menus.scss":
+/*!****************************************!*\
+  !*** ./src/components/menu/menus.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://proyecto1/./src/components/menu/menus.scss?");
 
 /***/ }),
 

@@ -1,0 +1,62 @@
+@font-face{
+    font-family: menuFont;
+    src: url("../../fonts/menuFont.ttf");
+}
+
+
+.footer #divider{
+    background-color: white;
+    background-blend-mode: luminosity;
+    background-image: linear-gradient(to right, rgb(88, 88, 88), rgb(151, 148, 148), rgb(193, 191, 191), white, rgb(193, 191, 191), rgb(151, 148, 148), rgb(88, 88, 88));
+    height: 3px;
+    width: 100%;
+    display: flex;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: rgb(34, 34, 34) ;
+    
+    
+}
+
+
+.footer #footerInfo{
+    flex-direction: row;
+    opacity: 0.9;
+    width: 100%;
+    display: flex;
+    font-family: menuFont;
+
+}
+
+.footer #footerInfo p{
+    color: rgba(255, 255, 255, 0.615);;
+}
+
+.footer #footerInfo #dbInfo{
+    width: 80%;
+    
+}
+
+.footer #footerInfo #dbInfo #info1{
+    padding: 16px 32px 20px;
+}
+
+.footer #footerInfo #dbInfo #info2, #info3{
+    padding: 0 0 0 32px;
+}
+
+.footer #footerInfo #advices{
+    width: 30%;
+    align-items: flex-end;
+    padding-top: 30px;
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
+    justify-content: right;
+
+}
+
+

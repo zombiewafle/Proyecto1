@@ -1,0 +1,202 @@
+//$image= url("../../")
+
+html{
+    background-color: #21242c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@font-face{
+    font-family: menuFont;
+    src: url("../../fonts/menuFont.ttf");
+}
+
+//////////////////////////////////////////////////////// Messages section ////////////////////////////////////////////////////////
+.pageBody{
+    background: #21242c;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pageBody #messages{
+    display: flex;
+    height: 60%;
+    flex-wrap: wrap;
+    
+}
+
+
+.pageBody #messages #message1{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+
+.pageBody #messages #message1 p{
+    font-size: 38px;
+    color: white;
+    font-family: menuFont;
+    width: 50%;
+ 
+}
+
+
+.pageBody #messages #message2{
+    width: 50%;
+    flex-direction: column;
+
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+}
+
+.pageBody #messages #message2 #deckVerified li, #deckPlayable li, #threeOrMore li, #twoOrMore li, #atLeastOne li{
+    display: inline-block;
+    color: #cfb53b;
+    
+    font-family: menuFont;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.pageBody #messages #message2 #test1{
+    list-style-image: url('../../images/accountIcon.png');
+}
+
+
+.pageBody #messages #message2 #deckVerified #firstLine, #deckPlayable #secondLine{
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.pageBody #messages #message2 #deckVerified #firstLine a:visited, #deckPlayable #secondLine a:visited{
+    color:#cfb53b;
+    font-size: 18px;
+}
+
+.pageBody #messages #message2 #threeOrMore #thirdLine, #twoOrMore #fourthLine,  #atLeastOne #fifthLine{
+    font-size: 28px;
+}
+
+.pageBody #messages #message2 #gamesOnProtonDB, #verified{
+    color: white;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    font-family: menuFont;
+    font-size: 28px;
+    
+}
+
+
+
+
+//////////////////////////////////////////////////////// Stats section ////////////////////////////////////////////////////////
+
+.pageBody #stats{
+    background-color: #21242c;
+}
+
+.pageBody #stats #steamDeckImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+
+
+//////////////////////////////////////////////////////// New Post section ////////////////////////////////////////////////////////
+
+
+.pageBody #newPost{
+    background-color: #21242c;
+    font-size: 18px;
+    text-align: center;
+    font-family: menuFont;
+    color: #8f9195;
+}
+
+.pageBody #newPost a:visited{
+    color: #8f9195;
+}
+
+
+//////////////////////////////////////////////////////// whatIsProton section ////////////////////////////////////////////////////////
+.pageBody #whatIsProton{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 32px;
+    -moz-box-align: center;
+
+
+}
+
+.pageBody #whatIsProton{
+    color: white;
+    font-family: menuFont;
+    margin-bottom: 32px;
+    
+}
+
+.pageBody #whatIsProton h2{
+    font-size: 33px;
+}
+
+.pageBody #whatIsProton p{
+    font-weight: bold;
+    max-width: 800px;
+    font-size: 18px;
+    
+}
+
+
+.pageBody #whatIsDB{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 32px;
+    -moz-box-align: center;
+}
+
+.pageBody #whatIsDB{
+    color: white;
+    font-family: menuFont;
+    margin-bottom: 32px;
+
+}
+
+.pageBody #whatIsDB p{
+    max-width: 800px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+.pageBody #whatIsDB h2{
+    font-size: 33px;
+    text-align: center;
+}
