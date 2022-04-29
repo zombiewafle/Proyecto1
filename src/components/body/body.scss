@@ -43,6 +43,7 @@ html{
 
 
 .pageBody #messages #message1 p{
+    padding-top: 100px;
     font-size: 38px;
     color: white;
     font-family: menuFont;
@@ -72,8 +73,38 @@ html{
     
 }
 
+.pageBody #messages #message2 #deckVerified #test1{
+    display: flex;
+    flex-grow: 1;
+    gap: 250px;
+}
+
+.pageBody #messages #message2 #deckPlayable #test2{
+    display: flex;
+    flex-grow: 1;
+    gap: 83px;
+}
+
+.pageBody #messages #message2 #threeOrMore #test3{
+    display: flex;
+    flex-grow: 1;
+    gap: 190px;
+}
+
+.pageBody #messages #message2 #twoOrMore #test4{
+    display: flex;
+    flex-grow: 1;
+    gap: 195px;
+}
+
+.pageBody #messages #message2 #atLeastOne #test5{
+    display: flex;
+    flex-grow: 1;
+    gap: 170px;
+}
+
 .pageBody #messages #message2 #test1{
-    list-style-image: url('../../images/accountIcon.png');
+    list-style-image: url('../../images/triangleIcon.svg');
 }
 
 
@@ -84,8 +115,15 @@ html{
 
 .pageBody #messages #message2 #deckVerified #firstLine a:visited, #deckPlayable #secondLine a:visited{
     color:#cfb53b;
-    font-size: 18px;
+    font-size: 28px;
 }
+
+
+.pageBody #messages #message2 #deckVerified #firstLine a:link, #deckPlayable #secondLine a:link{
+    color:#cfb53b;
+    font-size: 28px;
+}
+
 
 .pageBody #messages #message2 #threeOrMore #thirdLine, #twoOrMore #fourthLine,  #atLeastOne #fifthLine{
     font-size: 28px;
@@ -108,14 +146,24 @@ html{
 
 .pageBody #stats{
     background-color: #21242c;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .pageBody #stats #steamDeckImage {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
+    align-items: center;
 
+}
+
+.pageBody #stats #steamDeckImage img{
+    padding-left: 100px;
 }
 
 
@@ -123,6 +171,7 @@ html{
 
 
 .pageBody #newPost{
+    padding-bottom: 50px;
     background-color: #21242c;
     font-size: 18px;
     text-align: center;

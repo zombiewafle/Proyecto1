@@ -1,0 +1,13 @@
+#lines{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+#lines #line1{
+    border-color: gray;
+    transform: rotate(145deg);
+    width: 2px;
+    height: 150px;
+}

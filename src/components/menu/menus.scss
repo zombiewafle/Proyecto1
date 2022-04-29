@@ -11,15 +11,39 @@
 
 
 .header{
-    background: #21242c;
+    background: #20242b;
     height: 20%;
+    
 }
 
-
+//Maximizing the size of the window or been over the limit
 @media screen and (min-width:1120px){
+
+    .header #menu #icons{
+        float:right
+    }
+
+    .header #menu #logo{
+        padding-top: 10px;
+    }
+
+    .header #lowerSizeMenu{
+        font-size: 0px;
+        display:none;
+        visibility:hidden;
+
+    }
+
+    #hiddenMenu{
+        font-size: 0px;
+        display:none;
+        visibility:hidden;
+
+    }
 
     .header ul li{
         font-family: menuFont;
+        font-weight: bold;
         display: inline-block;
     	color: white;
     	list-style-type: none;
@@ -28,6 +52,11 @@
         padding: 0px 0px 20px 30px;
     }
 
+
+    .header #menu {
+        display: flex;
+        padding: 0;
+    }
 
     .header ul li a{
         transition: color  0.5s ease-out;
@@ -58,7 +87,7 @@
 
     .header #input{
         width: 140px;
-        padding: 20px 0px 20px 20px;
+        padding: 0px 0px 20px 20px;
 
     }
     
@@ -75,7 +104,7 @@
 
 
     .header #proton, #db{
-        padding: 0px;
+        padding: 0px;   
     }
 
 
@@ -97,13 +126,32 @@
     }
 
 
-    .header #language, #account{
-        padding-top: 25px;
+    .header #menu .material-symbols-outlined{
+        
         padding-left: 15px;
         padding-right: 15px;
         float: right;
+        transition: color  0.5s ease-out;
     }
 
+    .header .material-symbols-outlined a{
+        transition: color  0.5s ease-out;
+        color: white;
+        text-decoration: none;
+    }
+
+    .header .material-symbols-outlined a:visited{
+        color: white;
+    }
+
+    .header .material-symbols-outlined a:hover{
+        color: #cfb53b;
+    }
+
+
+    .header .material-symbols-outlined{
+        color: white;
+    }
 
     .header #db {
         color:#cfb53b;
@@ -115,57 +163,140 @@
     .header #db a{
         color:#cfb53b;
     }
+
+    .pageBody #stats #steamDeckImage{
+        position: relative;
+        
+    }
+    
+    
+    
+    .pageBody #stats #steamDeckImage #steamDeckStats {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        gap: 200px;
+        width: 100%;
+        position: absolute;
+        left: 320px;
+    
+        
+    }
+    
+    
+    .pageBody #stats #steamDeckImage #steamDeckStats img{
+        width: 43%;
+    }
    
 }
 
+
+///Lowering the size of the window
 @media screen and (max-width:1120px){
 
-    .header #menu span img:empty{
+    .header #hiddenMenu{
+        transform: translateX(-48px);
         width: 0%;
+        height: 0%;
+
     }
 
-    .header ul li{
-        font-family: menuFont;
-    	color: white;
-    	list-style-type: none;
-    	padding: 0px 5px 10px 0px;
-    	letter-spacing: 1px;
-    	font-size: 25px;
-    	text-decoration: none;
-        height: fit-content;
+    .header #menu{
+        display: none;
     }
+    
+    ///// Lower Size Menu /////
 
-    .header ul li:hover{
-        color: #cfb53b;
-    }
-
-    .header #proton{
+    .header #menu2 #protonText2{
         font-family: titleFont;
-        font-size: 4rem;
+        font-size: 2.5rem;
+        display: inline;
+        
     }
-    .header #db {
-        font-family: titleFont;
+
+
+
+    .header #menu2 {
+       display: flex;
+       list-style-type: none;
+       padding: 0 15px 0 15px;
+    }
+
+    ////// Proton Text //////
+
+    .header #menu2 #protonText2 #db2{
         color:#cfb53b;
-        font-size: 4rem;
+        text-decoration: none;
+
     }
 
-    .header li input{
+    .header #menu2 #protonText2 #proton2, #db2{
+        text-decoration: none;
+    }
+
+    .header #menu2 #protonText2 a{
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in;
+    }
+
+    .header #menu2 #protonText2 a:link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header #menu2 #protonText2 a:visited{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header #menu2 #protonText2 a:hover{
+        color: #cfb53b;
+        text-decoration: none;
+    }
+
+    .header #lowerSizeMenu #menu2 #menuIcon{
+        color: white;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+
+    .header #lowerSizeMenu #menu2 #logo2{
+        padding-top: 10px;
+    }
+
+
+
+    ////// Input 2 //////
+    .header #menu2 input{
+        width: 135px;
+        padding: 10px 0px 5px 0px;
+        font-size: 1rem;
+        appearance: none;
+        padding-bottom: 5px;
         color:white;
         border: #21242c;
         background-color: #21242c;
         border-bottom: 1px solid white;
-        transition: opacity  1s ease-in;
+        transition: color 1s ease-in;
 
     }
 
+    .header #menu2 input:hover{
+        border-bottom: 2px solid white ;
 
-    .header #language{
-        float: right;
     }
 
+    .header #menu2 #input2{
+        padding: 0 0 0 20px;
+    }  
 
-    .header #account{
-        float: right;
+
+    ////// Icons 2 //////
+
+    .header #lowerSizeMenu #menu2 span{
+        justify-content: right;
+
     }
 
 }

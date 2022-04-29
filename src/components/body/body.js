@@ -1,7 +1,12 @@
 import React from "react";
 
 import "../body/body.scss";
-import steam from "../../images/steamDeck.png"
+import "../stats.scss";
+
+import steam from "../../images/steamDeck.png";
+import stats from "../../images/stats.png";
+
+import {Lines1} from "./lines.js"
 
 export function PageBody(){
 
@@ -11,6 +16,7 @@ export function PageBody(){
                 <div id="message1">
                     <p>Con Proton y Steam Play, ¡ahora muchos juegos funcionan en Linux!</p>
                 </div>
+
                 <div id="message2">
                     <span>
                         <p id="verified">Deck Verified Games</p>
@@ -25,7 +31,7 @@ export function PageBody(){
                     </span>
 
                     <span id="deckPlayable">
-                        <ul>
+                        <ul id="test2">
                             <li id="play">verificado para deck (jugable o verificado)</li>
                             <li id="secondLine"><a href="https://www.protondb.com/explore?selectedFilters=whitelisted">2,276</a></li>
                         </ul>
@@ -36,21 +42,21 @@ export function PageBody(){
                     </span>
 
                     <span id="threeOrMore">
-                        <ul>
+                        <ul id="test3">
                             <li id="three">recomendado por tres o más</li>
                             <li id="thirdLine">4,974</li>
                         </ul>
                     </span>
 
                     <span id="twoOrMore">
-                        <ul>
+                        <ul id="test4">
                             <li id="two">recomendado por dos o más</li>
                             <li id="fourthLine">7,302</li>
                         </ul>
                     </span>
                     
                     <span id="atLeastOne">
-                        <ul>
+                        <ul id="test5">
                             <li id="one">recomendado por al menos uno</li>
                             <li id="fifthLine">13,092</li>
                         </ul>
@@ -60,7 +66,11 @@ export function PageBody(){
 
             <div id="stats">
                 <span id="steamDeckImage">
-                    <img src={steam}></img>
+                    <img src={steam} width="85%"></img>
+                    <div id="steamDeckStats">
+                        <img src={stats}></img>
+
+                    </div>
                 </span>
             </div>
 
